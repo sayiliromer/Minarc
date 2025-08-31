@@ -1,4 +1,5 @@
 ﻿using Minarc.Common;
+using Unity.Collections;
 using UnityEngine;
 
 namespace Minarc.Authoring
@@ -8,9 +9,10 @@ namespace Minarc.Authoring
         public override void Bake()
         {
             var entity = GetEntity();
-            AddBuffer<TerrainChunkElement>(entity);
+            var chunkBuffer = AddBuffer<TileMapChunkElement>(entity);
+            chunkBuffer.Resize(Constants.ChunkSize * Constants.ChunkSize, NativeArrayOptions.ClearMemory);
             AddComponent<ChangeVersion>(entity);
-            AddComponent(entity, new TerrainChunkMeshVersion()
+            AddComponent(entity, new TileMapChunkMeshVersion()
             {
                 CheckedVersion = -1
             });

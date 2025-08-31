@@ -1,6 +1,7 @@
 ﻿using Minarc.Common;
 using Unity.Entities;
-using UnityEngine;
+using Unity.Mathematics;
+using Unity.Transforms;
 
 namespace Minarc.Server
 {
@@ -15,10 +16,34 @@ namespace Minarc.Server
         public void OnUpdate(ref SystemState state)
         {
             var repo = SystemAPI.GetSingleton<MainPrefabRepo>();
-            if (Input.GetKeyDown(KeyCode.A))
+            for (int x = 0; x < 5; x++)
             {
-                state.EntityManager.Instantiate(repo.TerrainChunk);
+                for (int y = 0; y < 5; y++)
+                {
+                    var chunkIndex = new int2(x, y);
+                    float2 chunkPosition = chunkIndex * Constants.ChunkSize;
+                    var chunkEntity = state.EntityManager.Instantiate(repo.TerrainChunk);
+                    var buffer = state.EntityManager.GetBuffer<TileMapChunkElement>(chunkEntity);
+                    for (int xx = 0; xx < Constants.ChunkSize; xx++)
+                    {
+                        for (int yy = 0; yy < Constants.ChunkSize; yy++)
+                        {
+                            var cellPos = chunkPosition + new int2(xx, yy);
+                            var n = noise.snoise(cellPos * 0.05f);
+                            if (n > 0.5f)
+                            {
+                                buffer[xx + yy * Constants.ChunkSize] = new TileMapChunkElement()
+                                {
+                                    Material =TileMaterial.Dirt
+                                };
+                            }
+                        }
+                    }
+                    state.EntityManager.SetComponentData(chunkEntity, LocalTransform.FromPosition(chunkPosition.x, chunkPosition.y,0));
+                }
             }
+
+            state.Enabled = false;
         }
 
         public void OnDestroy(ref SystemState state)
