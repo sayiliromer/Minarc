@@ -34,7 +34,7 @@ namespace Minarc.Server
                             {
                                 buffer[xx + yy * Constants.ChunkSize] = new TileMapChunkElement()
                                 {
-                                    Material =TileMaterial.Dirt
+                                    MaterialType =TileMaterialType.Dirt
                                 };
                             }
                         }

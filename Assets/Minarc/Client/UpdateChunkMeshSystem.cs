@@ -83,7 +83,7 @@ namespace Minarc.Client
                     for (int y = 0; y < ChunkSize; y++)
                     {
                         var tile = chunkBuffer[x + y * ChunkSize];
-                        if(tile.Material == TileMaterial.None) continue; // Empty tile
+                        if(tile.MaterialType == TileMaterialType.None) continue; // Empty tile
                         
                         var vertIndex = vertices.Count;
                         vertices.Add(new Vector3(x,y));

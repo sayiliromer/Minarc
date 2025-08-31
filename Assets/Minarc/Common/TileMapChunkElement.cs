@@ -7,11 +7,11 @@ namespace Minarc.Common
     [InternalBufferCapacity(100)]
     public struct TileMapChunkElement : IBufferElementData
     {
-        [GhostField] public TileMaterial Material;
+        [GhostField] public TileMaterialType MaterialType;
         [GhostField] public byte Rotation;
     }
 
-    public enum TileMaterial : short
+    public enum TileMaterialType : short
     {
         None,
         Grass,
