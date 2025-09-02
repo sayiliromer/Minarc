@@ -30,6 +30,7 @@ namespace Minarc.Client
         {
             if(!SystemAPI.TryGetSingletonBuffer(out DynamicBuffer<TileSpriteElement> tileSprites)) return;
             if(!SystemAPI.TryGetSingletonBuffer(out DynamicBuffer<TileSpriteSetElement> tileSpriteSets)) return;
+            if(!SystemAPI.TryGetSingleton(out BrushCollection brushCollection)) return;
             _chunks.Clear();
             var cmd = new EntityCommandBuffer(state.WorldUpdateAllocator);
             foreach (var (chunkBuffer, materialMeshInfoRef, entity) in

@@ -164,7 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e688788846314e8e9a5c4f77e08e6aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TileMaterials: []
+  TileMaterials:
+  - {fileID: 11400000, guid: 8d185c15e1696d94a82e0e4e7ecaf8e0, type: 2}
 --- !u!114 &450236003
 MonoBehaviour:
   m_ObjectHideFlags: 0

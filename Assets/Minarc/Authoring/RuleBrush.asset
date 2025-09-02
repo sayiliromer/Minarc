@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TileRule_5
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 16
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 688607872, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-8099184357151502320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
   m_Name: TileRule_46
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 255
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 2099540551, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-7333424756187438058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Name: TileRule_36
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 199
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1038625763, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-7142984871894202450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Name: TileRule_10
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 28
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 295019404, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-6845414169295605162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: TileRule_14
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 65
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 1627527906, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-6636172151727488410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Name: TileRule_19
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 81
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -91453406, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-5324372630583592808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: TileRule_7
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 20
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 638748172, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-4869956946651915770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: TileRule_33
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 127
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1425594184, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-4650990894934276101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: TileRule_3
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 5
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -160683264, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-4445639239269618619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: TileRule_6
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 17
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -534923299, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-4053456271445244491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: TileRule_27
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 113
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1336318020, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-3944000247123298360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: TileRule_35
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 197
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 565504216, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-3323382907046030658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Name: TileRule_34
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 193
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -2002156307, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-2421089743767739855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: TileRule_28
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 116
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 1631503251, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-1793130365728651429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: TileRule_39
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 215
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1573771587, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-1397712945342780975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: TileRule_4
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 7
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 380128690, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-1367733148350177507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: TileRule_25
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 95
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -767366541, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-1107064658795484576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: TileRule_15
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 68
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1236709214, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-794817786805630170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Name: TileRule_42
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 241
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -773592388, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-747319454574759772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Name: TileRule_24
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 93
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 1268779813, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-568186957861978079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Name: TileRule_31
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 124
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 1333000806, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &-80397297691223317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: TileRule_8
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 21
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -675796883, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: TileRule_16
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 69
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1349543593, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &84554334821016273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Name: TileRule_38
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 213
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 2026276435, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &911651976710287948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Name: TileRule_11
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 29
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 879917774, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &1858190811019494812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: TileRule_12
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 31
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 1217209594, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &2200639501062661242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: TileRule_41
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 223
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 1231539679, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &2306540583196914763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Name: TileRule_26
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 112
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -717027627, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &2394699463367894338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Name: TileRule_18
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 80
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1659249411, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &2528626114121706166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,7 +479,7 @@ MonoBehaviour:
   m_Name: TileRule_37
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 209
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -177439602, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &3108224425298523507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: TileRule_2
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 4
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 919458751, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &4612639653679994368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Name: TileRule_45
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 253
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -2099413981, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &4851282462796790483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Name: TileRule_13
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 64
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 919458751, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &5109750099167335289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Name: TileRule_20
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 84
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -788382121, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &5371160005176489950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Name: TileRule_30
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 119
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1710349664, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &5533018027189928528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Name: TileRule_29
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 117
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 530213007, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &5945219726859588510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_Name: TileRule_17
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 71
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 827895551, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &6275072844873645077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Name: TileRule_43
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 245
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1629653649, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &6398265562537845057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Name: TileRule_21
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 85
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1328735520, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &7018583637472011863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Name: TileRule_1
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 1
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 94688840, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &7079823442771258635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Name: TileRule_0
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 0
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1663730983, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &8130759199449230141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Name: TileRule_9
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 23
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 207023060, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &8134979788646761011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Name: TileRule_22
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 87
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 1525053025, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &8155644551067313977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_Name: TileRule_23
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 92
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -1218454706, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &8171658671330490993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Name: TileRule_40
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 221
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 1304218606, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &8631060021289568793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Name: TileRule_32
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 125
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: 253741986, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &9069205605930093094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,4 +717,4 @@ MonoBehaviour:
   m_Name: TileRule_44
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 247
-  BaseSprite: {fileID: 0}
+  BaseSprite: {fileID: -698058893, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}

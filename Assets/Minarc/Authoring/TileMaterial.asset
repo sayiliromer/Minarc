@@ -13,7 +13,4 @@ MonoBehaviour:
   m_Name: TileMaterial
   m_EditorClassIdentifier: 
   Type: 1
-  TileSet:
-    TileCases:
-    - NeighborRule: 191
-      Variants: []
+  TileSet: {fileID: 11400000, guid: 2797f7543693e16458d24ab4bb4c0db9, type: 2}
