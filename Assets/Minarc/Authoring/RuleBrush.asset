@@ -1,0 +1,720 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8473810502360395066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_5
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 16
+  BaseSprite: {fileID: 0}
+--- !u!114 &-8099184357151502320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_46
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 255
+  BaseSprite: {fileID: 0}
+--- !u!114 &-7333424756187438058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_36
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 199
+  BaseSprite: {fileID: 0}
+--- !u!114 &-7142984871894202450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_10
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 28
+  BaseSprite: {fileID: 0}
+--- !u!114 &-6845414169295605162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_14
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 65
+  BaseSprite: {fileID: 0}
+--- !u!114 &-6636172151727488410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_19
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 81
+  BaseSprite: {fileID: 0}
+--- !u!114 &-5324372630583592808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_7
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 20
+  BaseSprite: {fileID: 0}
+--- !u!114 &-4869956946651915770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_33
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 127
+  BaseSprite: {fileID: 0}
+--- !u!114 &-4650990894934276101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_3
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 5
+  BaseSprite: {fileID: 0}
+--- !u!114 &-4445639239269618619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_6
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 17
+  BaseSprite: {fileID: 0}
+--- !u!114 &-4053456271445244491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_27
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 113
+  BaseSprite: {fileID: 0}
+--- !u!114 &-3944000247123298360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_35
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 197
+  BaseSprite: {fileID: 0}
+--- !u!114 &-3323382907046030658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_34
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 193
+  BaseSprite: {fileID: 0}
+--- !u!114 &-2421089743767739855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_28
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 116
+  BaseSprite: {fileID: 0}
+--- !u!114 &-1793130365728651429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_39
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 215
+  BaseSprite: {fileID: 0}
+--- !u!114 &-1397712945342780975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_4
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 7
+  BaseSprite: {fileID: 0}
+--- !u!114 &-1367733148350177507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_25
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 95
+  BaseSprite: {fileID: 0}
+--- !u!114 &-1107064658795484576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_15
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 68
+  BaseSprite: {fileID: 0}
+--- !u!114 &-794817786805630170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_42
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 241
+  BaseSprite: {fileID: 0}
+--- !u!114 &-747319454574759772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_24
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 93
+  BaseSprite: {fileID: 0}
+--- !u!114 &-568186957861978079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_31
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 124
+  BaseSprite: {fileID: 0}
+--- !u!114 &-80397297691223317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_8
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 21
+  BaseSprite: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ff407b5f7148998d35bb6747947a54, type: 3}
+  m_Name: RuleBrush
+  m_EditorClassIdentifier: 
+  Rules:
+  - {fileID: 7079823442771258635}
+  - {fileID: 7018583637472011863}
+  - {fileID: 3108224425298523507}
+  - {fileID: -4650990894934276101}
+  - {fileID: -1397712945342780975}
+  - {fileID: -8473810502360395066}
+  - {fileID: -4445639239269618619}
+  - {fileID: -5324372630583592808}
+  - {fileID: -80397297691223317}
+  - {fileID: 8130759199449230141}
+  - {fileID: -7142984871894202450}
+  - {fileID: 911651976710287948}
+  - {fileID: 1858190811019494812}
+  - {fileID: 4851282462796790483}
+  - {fileID: -6845414169295605162}
+  - {fileID: -1107064658795484576}
+  - {fileID: 23289357154648511}
+  - {fileID: 5945219726859588510}
+  - {fileID: 2394699463367894338}
+  - {fileID: -6636172151727488410}
+  - {fileID: 5109750099167335289}
+  - {fileID: 6398265562537845057}
+  - {fileID: 8134979788646761011}
+  - {fileID: 8155644551067313977}
+  - {fileID: -747319454574759772}
+  - {fileID: -1367733148350177507}
+  - {fileID: 2306540583196914763}
+  - {fileID: -4053456271445244491}
+  - {fileID: -2421089743767739855}
+  - {fileID: 5533018027189928528}
+  - {fileID: 5371160005176489950}
+  - {fileID: -568186957861978079}
+  - {fileID: 8631060021289568793}
+  - {fileID: -4869956946651915770}
+  - {fileID: -3323382907046030658}
+  - {fileID: -3944000247123298360}
+  - {fileID: -7333424756187438058}
+  - {fileID: 2528626114121706166}
+  - {fileID: 84554334821016273}
+  - {fileID: -1793130365728651429}
+  - {fileID: 8171658671330490993}
+  - {fileID: 2200639501062661242}
+  - {fileID: -794817786805630170}
+  - {fileID: 6275072844873645077}
+  - {fileID: 9069205605930093094}
+  - {fileID: 4612639653679994368}
+  - {fileID: -8099184357151502320}
+--- !u!114 &23289357154648511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_16
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 69
+  BaseSprite: {fileID: 0}
+--- !u!114 &84554334821016273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_38
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 213
+  BaseSprite: {fileID: 0}
+--- !u!114 &911651976710287948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_11
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 29
+  BaseSprite: {fileID: 0}
+--- !u!114 &1858190811019494812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_12
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 31
+  BaseSprite: {fileID: 0}
+--- !u!114 &2200639501062661242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_41
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 223
+  BaseSprite: {fileID: 0}
+--- !u!114 &2306540583196914763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_26
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 112
+  BaseSprite: {fileID: 0}
+--- !u!114 &2394699463367894338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_18
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 80
+  BaseSprite: {fileID: 0}
+--- !u!114 &2528626114121706166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_37
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 209
+  BaseSprite: {fileID: 0}
+--- !u!114 &3108224425298523507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_2
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 4
+  BaseSprite: {fileID: 0}
+--- !u!114 &4612639653679994368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_45
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 253
+  BaseSprite: {fileID: 0}
+--- !u!114 &4851282462796790483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_13
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 64
+  BaseSprite: {fileID: 0}
+--- !u!114 &5109750099167335289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_20
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 84
+  BaseSprite: {fileID: 0}
+--- !u!114 &5371160005176489950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_30
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 119
+  BaseSprite: {fileID: 0}
+--- !u!114 &5533018027189928528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_29
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 117
+  BaseSprite: {fileID: 0}
+--- !u!114 &5945219726859588510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_17
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 71
+  BaseSprite: {fileID: 0}
+--- !u!114 &6275072844873645077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_43
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 245
+  BaseSprite: {fileID: 0}
+--- !u!114 &6398265562537845057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_21
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 85
+  BaseSprite: {fileID: 0}
+--- !u!114 &7018583637472011863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_1
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 1
+  BaseSprite: {fileID: 0}
+--- !u!114 &7079823442771258635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_0
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 0
+  BaseSprite: {fileID: 0}
+--- !u!114 &8130759199449230141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_9
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 23
+  BaseSprite: {fileID: 0}
+--- !u!114 &8134979788646761011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_22
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 87
+  BaseSprite: {fileID: 0}
+--- !u!114 &8155644551067313977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_23
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 92
+  BaseSprite: {fileID: 0}
+--- !u!114 &8171658671330490993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_40
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 221
+  BaseSprite: {fileID: 0}
+--- !u!114 &8631060021289568793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_32
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 125
+  BaseSprite: {fileID: 0}
+--- !u!114 &9069205605930093094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TileRule_44
+  m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
+  NeighborFlags: 247
+  BaseSprite: {fileID: 0}

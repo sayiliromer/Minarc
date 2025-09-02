@@ -12,6 +12,15 @@ namespace Minarc.Authoring
             var entity = GetEntity();
             var allTileBuffer = AddBuffer<TileSpriteSetElement>(entity);
             var allSpriteBuffer = AddBuffer<TileSpriteElement>(entity);
+
+            for (int i = 0; i < TileMaterials.Count; i++)
+            {
+                var material = TileMaterials[i];
+                // for (int j = 0; j < UPPER; j++)
+                // {
+                //     material.TileSet.Rules
+                // }
+            }
         }
     }
 }

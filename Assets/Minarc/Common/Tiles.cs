@@ -13,7 +13,7 @@ namespace Minarc.Common
 
     public struct RuleTile : IBufferElementData
     {
-        public short TileSpriteHeaderIndex;
+        public short TileSpriteSetHeaderIndex;
     }
 
     //Points to sprites for tile sprites and it's cosmetic variations
