@@ -6,21 +6,24 @@ namespace Minarc.Common
 {
     public struct SpriteData
     {
-        public float2 UvMin;
-        public float2 UvMax;
         public float PixelsPerUnit;
         public float2 Pivot;
         public int TextureId;
+
+        public float2 Uv0;
+        public float2 Uv1;
+
+        public float2 Uv2;
+        public float2 Uv3;
 
         public static SpriteData FromSprite(Sprite sprite)
         {
             SpriteData result = default;
             var uvs = sprite.uv;
-            for (int i = 0; i < uvs.Length; i++)
-            {
-                result.UvMin = math.min(result.UvMin, uvs[i]);
-                result.UvMax = math.min(result.UvMax, uvs[i]);
-            }
+            result.Uv0 = uvs[2];
+            result.Uv1 = uvs[0];
+            result.Uv2 = uvs[1];
+            result.Uv3 = uvs[3];
             result.PixelsPerUnit = sprite.pixelsPerUnit;
             result.Pivot = sprite.pivot;
 

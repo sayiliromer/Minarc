@@ -56,29 +56,31 @@ namespace Minarc.Client
 
             //Neighboring indexes
             Span<int2> nIndex = stackalloc int2[8];
-            nIndex[0] = new int2(-1, -1);
-            nIndex[1] = new int2(-1, 0);
-            nIndex[2] = new int2(-1, 1);
-            nIndex[3] = new int2(0, 1);
-            nIndex[4] = new int2(1, 1);
-            nIndex[5] = new int2(1, 0);
-            nIndex[6] = new int2(1, -1);
-            nIndex[7] = new int2(0, -1);
+            nIndex[0] = new int2(0, 1);
+            nIndex[1] = new int2(1, 1);
+            nIndex[2] = new int2(1, 0);
+            nIndex[3] = new int2(1, -1);
+            nIndex[4] = new int2(0, -1);
+            nIndex[5] = new int2(-1, -1);
+            nIndex[6] = new int2(-1, 0);
+            nIndex[7] = new int2(-1, 1);
             
             var graphicsSystem = state.World.GetExistingSystemManaged<EntitiesGraphicsSystem>();
-            foreach (var (chunkBuffer, meshVersionRef, versionRef, materialMeshInfoRef, transformRef) in
+            foreach (var (chunkBuffer, meshVersionRef, versionRef, materialMeshInfoRef, transformRef, rende) in
                      SystemAPI.Query<DynamicBuffer<TileMapChunkElement>,
                          RefRW<TileMapChunkMeshVersion>,
                          RefRO<ChangeVersion>,
                          RefRO<MaterialMeshInfo>,
-                         RefRO<LocalTransform>>())
+                         RefRO<LocalTransform>, RefRW<RenderBounds>>())
             {
                 if (meshVersionRef.ValueRO.CheckedVersion == versionRef.ValueRO.Version) continue;
+                
                 meshVersionRef.ValueRW.CheckedVersion = versionRef.ValueRO.Version;
                 var mesh = graphicsSystem.GetMesh(materialMeshInfoRef.ValueRO.MeshID);
                 var chunkIndex = transformRef.ValueRO.Position.ToChunkIndex();
                 var vertices = new List<Vector3>();
                 var indices = new List<int>();
+                var uv = new List<Vector2>();
                 for (int x = 0; x < ChunkSize; x++)
                 {
                     for (int y = 0; y < ChunkSize; y++)
@@ -98,7 +100,25 @@ namespace Minarc.Client
                         indices.Add(vertIndex + 2);
                         indices.Add(vertIndex + 3);
                         indices.Add(vertIndex + 0);
-                        
+
+                        int flag = 0;
+                        for (int i = 0; i < nIndex.Length; i++)
+                        {
+                            var n = nIndex[i] + new int2(x,y);
+                            if(n.x < 0 || n.x >= ChunkSize) continue;
+                            if(n.y < 0 || n.y >= ChunkSize) continue;
+                            var nbh = chunkBuffer[n.x + n.y * ChunkSize];
+                            if (nbh.MaterialType == TileMaterialType.None) continue;
+                            flag |= 1 << i;
+                        }
+                        var tileIndex = brushCollection.NeighborFlagToTile.Value.FlagToIndex[flag];
+
+                        ref var r = ref brushCollection.Brushes.Value.Brushes[0].Rules[tileIndex.CanonicalTileIndex];
+                        var sp = r.Sprites[0];
+                        uv.Add(sp.Uv0);
+                        uv.Add(sp.Uv1);
+                        uv.Add(sp.Uv2);
+                        uv.Add(sp.Uv3);
                         // byte caseIndex = 0;
                         // for (int i = 0; i < nIndex.Length; i++)
                         // {
@@ -108,6 +128,13 @@ namespace Minarc.Client
                 }
                 mesh.vertices = vertices.ToArray();
                 mesh.triangles = indices.ToArray();
+                mesh.uv = uv.ToArray();
+                mesh.RecalculateBounds();
+                rende.ValueRW.Value = new AABB()
+                {
+                    Center = mesh.bounds.center,
+                    Extents = mesh.bounds.extents,
+                };
                 // mesh.vertices = new[]
                 // {
                 //     new Vector3(-0.5f, -0.5f),

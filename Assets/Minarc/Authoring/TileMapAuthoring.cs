@@ -48,7 +48,7 @@ namespace Minarc.Authoring
                 for (int j = 0; j < material.TileSet.Rules.Length; j++)
                 {
                     ref var rule = ref rules[j];
-                    var authoringRule = material.TileSet.Rules[i];
+                    var authoringRule = material.TileSet.Rules[j];
                     rule.NeighborFlags = authoringRule.NeighborFlags;
                     var sprites = builder.Allocate(ref rule.Sprites, 1);
                     if (authoringRule.BaseSprite)

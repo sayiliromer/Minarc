@@ -9,11 +9,13 @@ namespace Minarc.Client
     public static class MeshPool
     {
         private static List<(Mesh mesh, BatchMeshID meshId)> _freeMeshes = new();
+        private static List<Mesh> _allMeshes = new();
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void Reset()
         {
             _freeMeshes = new List<(Mesh mesh, BatchMeshID meshId)>();
+            _allMeshes = new List<Mesh>();
         }
         
         public static (Mesh mesh, BatchMeshID meshId) Get(World world)
@@ -26,6 +28,7 @@ namespace Minarc.Client
             }
             var graphicsSystem = world.GetExistingSystemManaged<EntitiesGraphicsSystem>();
             var mesh = new Mesh();
+            _allMeshes.Add(mesh);
             var meshId = graphicsSystem.RegisterMesh(mesh);
             return (mesh, meshId);
         }

@@ -16,9 +16,9 @@ namespace Minarc.Server
         public void OnUpdate(ref SystemState state)
         {
             var repo = SystemAPI.GetSingleton<MainPrefabRepo>();
-            for (int x = 0; x < 5; x++)
+            for (int x = 0; x < 100; x++)
             {
-                for (int y = 0; y < 5; y++)
+                for (int y = 0; y < 100; y++)
                 {
                     var chunkIndex = new int2(x, y);
                     float2 chunkPosition = chunkIndex * Constants.ChunkSize;
@@ -29,8 +29,8 @@ namespace Minarc.Server
                         for (int yy = 0; yy < Constants.ChunkSize; yy++)
                         {
                             var cellPos = chunkPosition + new int2(xx, yy);
-                            var n = noise.snoise(cellPos * 0.05f);
-                            if (n > 0.5f)
+                            var n = noise.snoise(cellPos * 0.2f);
+                            if (n > 0f)
                             {
                                 buffer[xx + yy * Constants.ChunkSize] = new TileMapChunkElement()
                                 {

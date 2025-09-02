@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_5
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 16
@@ -23,7 +23,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_46
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 255
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_36
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 199
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_10
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 28
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_14
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 65
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_19
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 81
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_7
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 20
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_33
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 127
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_3
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 5
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_6
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 17
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_27
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 113
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_35
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 197
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_34
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 193
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_28
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 116
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_39
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 215
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_4
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 7
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_25
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 95
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_15
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 68
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_42
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 241
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_24
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 93
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_31
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 124
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_8
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 21
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_16
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 69
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_38
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 213
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_11
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 29
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_12
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 31
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_41
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 223
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_26
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 112
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_18
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 80
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_37
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 209
@@ -489,11 +489,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_2
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 4
-  BaseSprite: {fileID: 919458751, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
+  BaseSprite: {fileID: 876900903, guid: 9eebe26d73efe2445ad01dce3d17eec2, type: 3}
 --- !u!114 &4612639653679994368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_45
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 253
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_13
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 64
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_20
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 84
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_30
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 119
@@ -559,7 +559,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_29
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 117
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_17
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 71
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_43
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 245
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_21
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 85
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_1
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 1
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_0
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 0
@@ -643,7 +643,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_9
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 23
@@ -657,7 +657,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_22
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 87
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_23
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 92
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_40
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 221
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_32
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 125
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e8084c12d3bc49b39b5e8b753ea8f1bb, type: 3}
   m_Name: TileRule_44
   m_EditorClassIdentifier: Minarc.Authoring:Minarc.Authoring:TileRule
   NeighborFlags: 247
