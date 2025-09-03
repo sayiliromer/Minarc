@@ -138,20 +138,6 @@ namespace Minarc.Client
                     {
                         var tile = chunkBuffer[x + y * ChunkSize];
                         if(tile.MaterialType == TileMaterialType.None) continue; // Empty tile
-                        
-                        var vertIndex = vertices.Count;
-                        vertices.Add(new Vector3(x,y));
-                        vertices.Add(new Vector3(x,y + 1));
-                        vertices.Add(new Vector3(x + 1,y + 1));
-                        vertices.Add(new Vector3(x + 1,y));
-                        
-                        indices.Add(vertIndex + 0);
-                        indices.Add(vertIndex + 1);
-                        indices.Add(vertIndex + 2);
-                        indices.Add(vertIndex + 2);
-                        indices.Add(vertIndex + 3);
-                        indices.Add(vertIndex + 0);
-
                         TileMapChunkElement? GetTileElement(int2 nDir)
                         {
                             var tileIndex = nDir + new int2(x,y);
@@ -191,26 +177,35 @@ namespace Minarc.Client
                             }
                             return chunkBuffer[tileIndex.x + tileIndex.y * ChunkSize];
                         }
-
                         int flag = 0;
                         for (int nIndex = 0; nIndex < _neighbors.Length; nIndex++)
                         {
                             var nDir = _neighbors[nIndex];
-                            var indexInTile = nDir + new int2(x, y);
                             var nTileElement = GetTileElement(nDir);
                             if (nTileElement == null) continue;
                             if (nTileElement.Value.MaterialType == TileMaterialType.None) continue;
                             flag |= 1 << nIndex;
                         }
-
                         var tileIndex = brushCollection.NeighborFlagToTile.Value.FlagToIndex[flag];
-
-                        ref var r = ref brushCollection.Brushes.Value.Brushes[0].Rules[tileIndex.CanonicalTileIndex];
-                        var sp = r.Sprites[0];
-                        uv.Add(sp.Uv0);
-                        uv.Add(sp.Uv1);
-                        uv.Add(sp.Uv2);
-                        uv.Add(sp.Uv3);
+                        ref var ruleTileData = ref brushCollection.Brushes.Value.Brushes[0].Rules[tileIndex.CanonicalTileIndex];
+                        var spriteData = ruleTileData.Sprites[0];
+                        uv.Add(spriteData.Uv0);
+                        uv.Add(spriteData.Uv1);
+                        uv.Add(spriteData.Uv2);
+                        uv.Add(spriteData.Uv3);
+                        
+                        var vertIndex = vertices.Count;
+                        vertices.Add(new Vector3(x,y));
+                        vertices.Add(new Vector3(x,y + 1));
+                        vertices.Add(new Vector3(x + 1,y + 1));
+                        vertices.Add(new Vector3(x + 1,y));
+                        
+                        indices.Add(vertIndex + 0);
+                        indices.Add(vertIndex + 1);
+                        indices.Add(vertIndex + 2);
+                        indices.Add(vertIndex + 2);
+                        indices.Add(vertIndex + 3);
+                        indices.Add(vertIndex + 0);
                     }
                 }
                 mesh.vertices = vertices.ToArray();

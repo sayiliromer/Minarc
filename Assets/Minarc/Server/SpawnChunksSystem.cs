@@ -19,6 +19,21 @@ namespace Minarc.Server
             state.RequireForUpdate<MainPrefabRepo>();
         }
 
+         static float FBM(float2 pos, int octaves, float lacunarity = 2, float gain = 0.5f)
+        {
+            float sum = 0f;
+            float amplitude = 1f;
+            float frequency = 1f;
+
+            for (int i = 0; i < octaves; i++)
+            {
+                sum += noise.snoise(pos * frequency) * amplitude;
+                frequency *= lacunarity; // usually 2.0
+                amplitude *= gain;       // usually 0.5
+            }
+
+            return sum;
+        }
         public void OnUpdate(ref SystemState state)
         {
             var repo = SystemAPI.GetSingleton<MainPrefabRepo>();
@@ -35,7 +50,7 @@ namespace Minarc.Server
                         for (int yy = 0; yy < Constants.ChunkSize; yy++)
                         {
                             var cellPos = chunkPosition + new int2(xx, yy);
-                            var n = noise.snoise(cellPos * 0.2f);
+                            var n = FBM(cellPos * 0.01f, 6, 3, 0.6f);
                             if (n > 0f)
                             {
                                 buffer[xx + yy * Constants.ChunkSize] = new TileMapChunkElement()
