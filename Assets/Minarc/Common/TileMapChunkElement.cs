@@ -4,7 +4,8 @@ using UnityEngine.Rendering;
 
 namespace Minarc.Common
 {
-    [InternalBufferCapacity(100)]
+    [InternalBufferCapacity(Constants.ChunkDataLength)]
+    //Includes padding data
     public struct TileMapChunkElement : IBufferElementData
     {
         [GhostField] public TileMaterialType MaterialType;

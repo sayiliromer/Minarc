@@ -6,6 +6,12 @@ using Unity.Transforms;
 namespace Minarc.Server
 {
     [WorldSystemFilter(WorldSystemFilterFlags.ServerSimulation)]
+    public partial struct PaintTest : ISystem
+    {
+        
+    }
+    
+    [WorldSystemFilter(WorldSystemFilterFlags.ServerSimulation)]
     public partial struct SpawnChunksSystem : ISystem
     {
         public void OnCreate(ref SystemState state)
@@ -16,9 +22,9 @@ namespace Minarc.Server
         public void OnUpdate(ref SystemState state)
         {
             var repo = SystemAPI.GetSingleton<MainPrefabRepo>();
-            for (int x = 0; x < 100; x++)
+            for (int x = 0; x < 30; x++)
             {
-                for (int y = 0; y < 100; y++)
+                for (int y = 0; y < 30; y++)
                 {
                     var chunkIndex = new int2(x, y);
                     float2 chunkPosition = chunkIndex * Constants.ChunkSize;

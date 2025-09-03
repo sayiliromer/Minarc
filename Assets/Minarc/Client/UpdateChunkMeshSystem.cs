@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Drawing;
 using Minarc.Common;
+using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
+using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Rendering;
 using Unity.Transforms;
@@ -14,22 +17,70 @@ namespace Minarc.Client
     [UpdateInGroup(typeof(PresentationSystemGroup))]
     public partial struct UpdateChunkMeshSystem : ISystem
     {
-        private NativeHashMap<int2,DynamicBuffer<TileMapChunkElement>> _chunks;
+        private NativeParallelHashMap<int2,Entity> _chunks;
+        private NativeList<Entity> _updateMeshChunks;
+        private FixedList128Bytes<int2> _neighbors;
+        private NativeHashSet<Entity> _updateMeshChunksSet;
         
         public void OnCreate(ref SystemState state)
         {
-            _chunks = new NativeHashMap<int2, DynamicBuffer<TileMapChunkElement>>(16, Allocator.Persistent);
+            _updateMeshChunks = new NativeList<Entity>(Allocator.Persistent);
+            _chunks = new NativeParallelHashMap<int2, Entity>(100000, Allocator.Persistent);
+            _updateMeshChunksSet = new NativeHashSet<Entity>(200,Allocator.Persistent);
+            _neighbors.Add(new int2(0, 1));
+            _neighbors.Add(new int2(1, 1));
+            _neighbors.Add(new int2(1, 0));
+            _neighbors.Add(new int2(1, -1));
+            _neighbors.Add(new int2(0, -1));
+            _neighbors.Add(new int2(-1, -1));
+            _neighbors.Add(new int2(-1, 0));
+            _neighbors.Add(new int2(-1, 1));
         }
 
         public void OnDestroy(ref SystemState state)
         {
+            _updateMeshChunksSet.Dispose();
+            _updateMeshChunks.Dispose();
             _chunks.Dispose();
         }
+        
+        [BurstCompile]
+        [WithAll(typeof(TileMapChunkElement))]
+        private partial struct UpdateChunkMapJob : IJobEntity
+        {
+            public NativeParallelHashMap<int2, Entity>.ParallelWriter Chunks;
 
+            private void Execute(in Entity entity, in LocalTransform transform)
+            {
+                var chunkIndex = transform.Position.ToChunkIndex();
+                Chunks.TryAdd(chunkIndex, entity);
+            }
+        }
+        
+        [BurstCompile]
+        private partial struct FindChangedChunksJob : IJobEntity
+        {
+            public bool Force;
+            public NativeParallelHashMap<int2, Entity> Chunks;
+            public NativeList<Entity> Entities;
+            public FixedList128Bytes<int2> Neighbors;
+            
+            private void Execute(in Entity entity,ref TileMapChunkMeshVersion meshVersion, in ChangeVersion changeVersion, in LocalTransform transform)
+            {
+                if(meshVersion.CheckedVersion == changeVersion.Version && !Force) return;
+                meshVersion.CheckedVersion = changeVersion.Version;
+                var chunkIndex = transform.Position.ToChunkIndex();
+                Entities.Add(entity);
+                for (int i = 0; i < Neighbors.Length; i++)
+                {
+                    if(!Chunks.TryGetValue(chunkIndex + Neighbors[i], out var chunk)) continue;
+                    Entities.Add(chunk);
+                }
+            }
+        }
+        
         public void OnUpdate(ref SystemState state)
         {
-            if(!SystemAPI.TryGetSingletonBuffer(out DynamicBuffer<TileSpriteElement> tileSprites)) return;
-            if(!SystemAPI.TryGetSingletonBuffer(out DynamicBuffer<TileSpriteSetElement> tileSpriteSets)) return;
             if(!SystemAPI.TryGetSingleton(out BrushCollection brushCollection)) return;
             _chunks.Clear();
             var cmd = new EntityCommandBuffer(state.WorldUpdateAllocator);
@@ -47,37 +98,37 @@ namespace Minarc.Client
             cmd.Playback(state.EntityManager);
             
             _chunks.Clear();
-            foreach (var (chunkBuffer, transformRef, entity) in
-                     SystemAPI.Query<DynamicBuffer<TileMapChunkElement>, RefRO<LocalTransform>>().WithEntityAccess())
+            _updateMeshChunks.Clear();
+            new UpdateChunkMapJob()
             {
-                var chunkIndex = transformRef.ValueRO.Position.ToChunkIndex();
-                _chunks.Add(chunkIndex, chunkBuffer);
-            }
+                Chunks = _chunks.AsParallelWriter(),
+            }.ScheduleParallel();
+            new FindChangedChunksJob()
+            {
+                Force = Input.GetKey(KeyCode.R),
+                Chunks = _chunks,
+                Neighbors = _neighbors,
+                Entities = _updateMeshChunks,
+            }.Schedule();
+            state.CompleteDependency();
 
-            //Neighboring indexes
-            Span<int2> nIndex = stackalloc int2[8];
-            nIndex[0] = new int2(0, 1);
-            nIndex[1] = new int2(1, 1);
-            nIndex[2] = new int2(1, 0);
-            nIndex[3] = new int2(1, -1);
-            nIndex[4] = new int2(0, -1);
-            nIndex[5] = new int2(-1, -1);
-            nIndex[6] = new int2(-1, 0);
-            nIndex[7] = new int2(-1, 1);
-            
+            var chunkLookup = SystemAPI.GetBufferLookup<TileMapChunkElement>();
+            var materialMeshInfoLookup = SystemAPI.GetComponentLookup<MaterialMeshInfo>();
+            var transformLookup = SystemAPI.GetComponentLookup<LocalTransform>();
+            var renderBoundsLookup = SystemAPI.GetComponentLookup<RenderBounds>();
             var graphicsSystem = state.World.GetExistingSystemManaged<EntitiesGraphicsSystem>();
-            foreach (var (chunkBuffer, meshVersionRef, versionRef, materialMeshInfoRef, transformRef, rende) in
-                     SystemAPI.Query<DynamicBuffer<TileMapChunkElement>,
-                         RefRW<TileMapChunkMeshVersion>,
-                         RefRO<ChangeVersion>,
-                         RefRO<MaterialMeshInfo>,
-                         RefRO<LocalTransform>, RefRW<RenderBounds>>())
+            var chunks = _chunks;
+            _updateMeshChunksSet.Clear();
+            for (int i = 0; i < _updateMeshChunks.Length; i++)
             {
-                if (meshVersionRef.ValueRO.CheckedVersion == versionRef.ValueRO.Version) continue;
-                
-                meshVersionRef.ValueRW.CheckedVersion = versionRef.ValueRO.Version;
-                var mesh = graphicsSystem.GetMesh(materialMeshInfoRef.ValueRO.MeshID);
-                var chunkIndex = transformRef.ValueRO.Position.ToChunkIndex();
+                var updateEntity = _updateMeshChunks[i];
+                if(!_updateMeshChunksSet.Add(updateEntity)) continue;
+                var chunkBuffer = chunkLookup[updateEntity];
+                var localTransform = transformLookup[updateEntity];
+                var materialMeshInfo = materialMeshInfoLookup[updateEntity];
+                var renderBoundsRef = renderBoundsLookup.GetRefRW(updateEntity);
+                var mesh = graphicsSystem.GetMesh(materialMeshInfo.MeshID);
+                var chunkIndex = localTransform.Position.ToChunkIndex();
                 var vertices = new List<Vector3>();
                 var indices = new List<int>();
                 var uv = new List<Vector2>();
@@ -101,16 +152,57 @@ namespace Minarc.Client
                         indices.Add(vertIndex + 3);
                         indices.Add(vertIndex + 0);
 
-                        int flag = 0;
-                        for (int i = 0; i < nIndex.Length; i++)
+                        TileMapChunkElement? GetTileElement(int2 nDir)
                         {
-                            var n = nIndex[i] + new int2(x,y);
-                            if(n.x < 0 || n.x >= ChunkSize) continue;
-                            if(n.y < 0 || n.y >= ChunkSize) continue;
-                            var nbh = chunkBuffer[n.x + n.y * ChunkSize];
-                            if (nbh.MaterialType == TileMaterialType.None) continue;
-                            flag |= 1 << i;
+                            var tileIndex = nDir + new int2(x,y);
+                            if (tileIndex.x < 0 || tileIndex.x >= ChunkSize || tileIndex.y < 0 || tileIndex.y >= ChunkSize)
+                            {
+                                var nChunkIndex = chunkIndex;
+                                if (tileIndex.x < 0)
+                                {
+                                    nChunkIndex.x += nDir.x;
+                                }
+                                else if (tileIndex.x >= ChunkSize)
+                                {
+                                    nChunkIndex.x += nDir.x;
+                                }
+
+                                if (tileIndex.y < 0)
+                                {
+                                    nChunkIndex.y += nDir.y;
+                                }
+                                else if (tileIndex.y >= ChunkSize)
+                                {
+                                    nChunkIndex.y += nDir.y;
+                                }
+                                
+                                var ws = chunkIndex * 10 + new int2(x,y);
+                                tileIndex = new int2(
+                                    (tileIndex.x + ChunkSize) % ChunkSize,
+                                    (tileIndex.y + ChunkSize) % ChunkSize
+                                );
+                                if (!chunks.TryGetValue(nChunkIndex, out var chunkEntity))
+                                {
+                                    return null;
+                                }
+                                var nChunkBuffer = chunkLookup[chunkEntity];
+                                var nTile = nChunkBuffer[tileIndex.x + tileIndex.y * ChunkSize];
+                                return nTile;
+                            }
+                            return chunkBuffer[tileIndex.x + tileIndex.y * ChunkSize];
                         }
+
+                        int flag = 0;
+                        for (int nIndex = 0; nIndex < _neighbors.Length; nIndex++)
+                        {
+                            var nDir = _neighbors[nIndex];
+                            var indexInTile = nDir + new int2(x, y);
+                            var nTileElement = GetTileElement(nDir);
+                            if (nTileElement == null) continue;
+                            if (nTileElement.Value.MaterialType == TileMaterialType.None) continue;
+                            flag |= 1 << nIndex;
+                        }
+
                         var tileIndex = brushCollection.NeighborFlagToTile.Value.FlagToIndex[flag];
 
                         ref var r = ref brushCollection.Brushes.Value.Brushes[0].Rules[tileIndex.CanonicalTileIndex];
@@ -119,36 +211,18 @@ namespace Minarc.Client
                         uv.Add(sp.Uv1);
                         uv.Add(sp.Uv2);
                         uv.Add(sp.Uv3);
-                        // byte caseIndex = 0;
-                        // for (int i = 0; i < nIndex.Length; i++)
-                        // {
-                        //    var neighbourChunkIndex = nIndex[i] + chunkIndex; 
-                        // }
                     }
                 }
                 mesh.vertices = vertices.ToArray();
                 mesh.triangles = indices.ToArray();
                 mesh.uv = uv.ToArray();
                 mesh.RecalculateBounds();
-                rende.ValueRW.Value = new AABB()
+                renderBoundsRef.ValueRW.Value = new AABB()
                 {
                     Center = mesh.bounds.center,
                     Extents = mesh.bounds.extents,
                 };
-                // mesh.vertices = new[]
-                // {
-                //     new Vector3(-0.5f, -0.5f),
-                //     new Vector3(-0.5f, 0.5f),
-                //     new Vector3(0.5f, 0.5f),
-                //     new Vector3(0.5f, -0.5f)
-                // };
-                // mesh.SetIndices(new[]
-                // {
-                //     0, 1, 2,
-                //     2, 3, 0
-                // }, MeshTopology.Triangles, 0);
             }
-
 
             cmd = new EntityCommandBuffer(state.WorldUpdateAllocator);
 
